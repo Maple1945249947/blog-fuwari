@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: "Maple1945249947/blog-fuwari"
+  branch: main
+
+site_url: "https://keshimaple.de5.net"
+display_url: "https://keshimaple.de5.net"
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "posts"
+    label: "博客文章"
+    folder: "src/content/posts"
+    create: true
+    delete: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布时间", name: "published", widget: "datetime" }
+      - { label: "描述", name: "description", widget: "string", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "分类", name: "category", widget: "string", required: false }
+      - { label: "封面图片", name: "image", widget: "image", required: false }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "正文", name: "body", widget: "markdown" }
