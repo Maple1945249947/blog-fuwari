@@ -2,7 +2,7 @@
 ---
 title: "TEST"
 published: 2026-10-16
-image: "/images/uploads/cover.jpg"
+image: "/images/uploads/1610946445697.png"
 description: "src/content/posts"
 tags:
   - test
