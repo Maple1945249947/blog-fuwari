@@ -150,3 +150,12 @@
     }
   }
 }
+
+/* 全站背景壁纸 */
+body {
+  background-image: url("/images/uploads/site-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
